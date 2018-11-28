@@ -1,14 +1,25 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Медданные
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
   <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+    Выберите пункт меню.
   </p>
+  <button ion-button block (click)="OpenPage(1)">Вариабельность пульса</button>
+  <button ion-button block (click)="OpenPage(2)">Давление</button>
+  <button ion-button block (click)="OpenPage(3)">Пульс</button>
+  <button ion-button block (click)="OpenPage(4)">Средний пульс при ходьбе</button>
+  <button ion-button block (click)="OpenPage(5)">Уведомление о высоком пульсе</button>
+  <button ion-button block (click)="OpenPage(6)">Уведомленое о низком пульсе</button>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-footer>
