@@ -23,28 +23,28 @@ export class VariabilityPage {
     day: [
       {
         name: "День",
-        periud: ["00","01","02","03","04","05","06","07","08","09","10","11","12"],
+        period: ["00","01","02","03","04","05","06","07","08","09","10","11","12"],
         param: [2, 13, 12, 8, 5, 9, 11, 19, 2, 13, 12, 8, 5]
       }
     ],
     week: [
       {
         name: "Неделя",
-        periud: ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"],
+        period: ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"],
         param: [11, 1, 5, 18, 15, 10, 1]
       }
     ],
     month: [
       {
         name: "Месяц",
-        periud: ["Ян","Фв","Мр","Ап","Ма","Ию","Ил","Ав","Сн","Ок","Нб","Дк"],
+        period: ["Ян","Фв","Мр","Ап","Ма","Ию","Ил","Ав","Сн","Ок","Нб","Дк"],
         param: [7, 15, 17, 18, 3, 2, 14, 17, 8, 15, 4, 11]
       }
     ],
     year: [
       {
         name: "Год",
-        periud: ["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022"],
+        period: ["2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022"],
         param: [7, 16, 2, 18, 15, 10, 1, 7, 7, 16, 2, 18, 15]
       }
     ]
@@ -61,11 +61,11 @@ export class VariabilityPage {
   ) { }
 
   ionViewDidLoad() {
-    this.ctx = document.getElementById("myChartDiogram");
+    this.ctx = document.getElementById("myChartDiagram");
     this.chart = new Chart(this.ctx, {
       type: "line",
       data: {
-        labels: this.items[this.data][0].periud,
+        labels: this.items[this.data][0].period,
         datasets: [
           {
             data: this.items[this.data][0].param,
