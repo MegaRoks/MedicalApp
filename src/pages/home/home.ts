@@ -23,7 +23,7 @@ export class HomePage {
         this.navCtrl.push('PulsePage');
         break;
       case 4:
-        this.navCtrl.push('PulseWhileWalkingPage');
+        this.navCtrl.push('AveragePulsePage');
         break;
       case 5:
         this.navCtrl.push('SmallPulsePage');
