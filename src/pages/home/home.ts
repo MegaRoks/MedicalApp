@@ -26,10 +26,10 @@ export class HomePage {
         this.navCtrl.push('AveragePulsePage');
         break;
       case 5:
-        this.navCtrl.push('SmallPulsePage');
+        this.navCtrl.push('HighPulsePage');
         break;
       case 6:
-        this.navCtrl.push('HighPulsePage');
+        this.navCtrl.push('LowPulsePage');
         break;
     }
   }

@@ -4,15 +4,30 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
+
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>pulse</ion-title>
-  </ion-navbar>
-
+  <ion-navbar> <ion-title>Пульс</ion-title> </ion-navbar>
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="data" padding>
+      <ion-segment-button (click)="ionViewDidLoad('day')" value="day">День</ion-segment-button>
+      <ion-segment-button (click)="ionViewDidLoad('week')" value="week">Неделя</ion-segment-button>
+      <ion-segment-button (click)="ionViewDidLoad('month')" value="month">Месяц</ion-segment-button>
+      <ion-segment-button (click)="ionViewDidLoad('year')" value="year">Год</ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
 </ion-header>
 
-
-<ion-content padding>
-
+<ion-content>
+  <p text-center>
+      {{ getItems() }}
+  </p>
+  <ion-scroll padding scrollX="true" style="width: 100%; height: 100%"> 
+    <canvas id="myChartDiogram" width="500" height="500"></canvas>
+  </ion-scroll>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar padding>
+    <button ion-button block (click)="doPrompt()">Добавить показатели</button>
+  </ion-toolbar>
+</ion-footer>
