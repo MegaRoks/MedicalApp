@@ -51,7 +51,6 @@ export class AveragePulsePage {
   };
 
   getItems() {
-    console.log(this.items[this.data][0].name);    
     return this.items[this.data][0].name;
   }
 

@@ -51,8 +51,7 @@ export class PulsePage {
     ]
   };
 
-  getItems() {
-    console.log(this.items[this.data][0].name);    
+  getItems() {  
     return this.items[this.data][0].name;
   }
 

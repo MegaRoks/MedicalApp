@@ -1,6 +1,13 @@
 page-variability {
-    #myChartDiagram {
-        width: 2600px;
-        height: 1400px;
-      }
+  ion-scroll {
+    width: 100vh;
+    height: 62vh;
+    overflow-x: scroll;
+    overflow-y: scroll;
+  }
+
+  .scrollDiagram {
+    width: 800px;
+    height: 100%;
+  }
 }
